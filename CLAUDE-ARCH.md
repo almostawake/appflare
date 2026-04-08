@@ -1,3 +1,5 @@
+These are the technologies we'll use if/when their features are required
+
 # Target Technologies
 
 Framework: SvelteKit
@@ -8,17 +10,21 @@ TypeScript (strict mode)
 - Svelte (components + pages)
 - Tailwind CSS (styling)
 
-## Infrastructure
+## Infrastructure (cloudflare)
 
-- D1 via Drizzle ORM (database)
-- R2 (file storage)
+We are NOT using pages, they are deprecated. 
+We want auto-provision wherever posisble
+
+- D1 via Drizzle ORM
+- R2 
 - Workers KV (sessions, config, cache)
-- Zod (validation)
+- Zod 
 - REST API conventions
 
-## Authentication
+## Functional 
 
-Firebase Auth with firebase-auth-cloudflare-workers
+- Auth: Firebase Auth using firebase-auth-cloudflare-workers
+- Sockets/realtime: Party Kit
 
 ## Tooling
 
