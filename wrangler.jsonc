@@ -1,6 +1,6 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
-	"name": "burradoo-spend",
+	"name": "appflare",
 	"compatibility_date": "2026-04-02",
 	"compatibility_flags": [
 		"nodejs_als"
@@ -12,10 +12,4 @@
 	},
 	"workers_dev": true,
 	"preview_urls": true,
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_name": "burradoo-spend-db"
-		}
-	],
 }
