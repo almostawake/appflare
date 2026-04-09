@@ -26,7 +26,7 @@ Worker name is "appflare". All resources use the naming convention appflare-{typ
 
 Cloudflare Access (Zero Trust) with One-time PIN (email OTP). Configured via dashboard, not in code. On first deployment, ask the user which email addresses should have access.
 
-Do NOT implement custom password auth, token auth, Firebase Auth, or roll-your-own login flows.
+Do NOT implement custom password auth, token auth, Firebase Auth, or roll-your-own login flows. Explain the user what is required to set up these things.
 
 ## Sockets/realtime
 
@@ -35,5 +35,4 @@ Party Kit
 ## Tooling
 
 - Biome (formatting + linting)
-- Vitest with @cloudflare/vitest-pool-workers (testing)
 - Wrangler (dev server, types, deployment)
