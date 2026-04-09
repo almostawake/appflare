@@ -8,23 +8,18 @@ AppFlare is a project template with all the technology choices already made for 
 
 Your job is to describe what you want to build. Claude Code can take it from there, using this template as its guide.
 
-## What's included?
-
-Everything you need to go from idea to a working "app":
-
-- **Cloud hosting** — your app runs securely in the cloud, accessible from any browser, anywhere in the world. No servers to manage.  No credit card required, thanks to the amazing team at CloudFlare. 
-
-- **Database** — somewhere to store and retrieve information. Think spreadsheets, but faster and more structured.
-
-- **File storage** — a place to keep uploaded files, images, documents, and so on.
-
-- **Scheduled tasks** — set things to happen automatically on a schedule, like checking a website for new information.
-
-- **Code quality checks** — built-in tools that catch common mistakes and keep the code tidy, so Claude writes cleaner code from the start.
-
 ## Who is this for?
 
 People who have an idea for a small tool or app but aren't developers. You might be a business analyst, a project manager, a team lead, or just someone who wants to automate a repetitive task. You describe what you need, and this template gives Claude the structure it needs to build it.
+
+## What's covered?
+
+We've considered the main technologies needed by a small app:
+- hosting your app using CloudFlare's free plan (no credit card required)
+- storing data (database and files)
+- scheduled tasks
+- browsing web sites
+- securing your app if required (e.g. if you have a dashboard or management page)
 
 ## Getting started
 

@@ -13,6 +13,7 @@ Thumbs.db
 # Env
 .env
 .env.*
+.dev.vars
 
 # Vite
 vite.config.js.timestamp-*
