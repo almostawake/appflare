@@ -12,7 +12,14 @@ TypeScript (strict mode)
 
 ## Infrastructure (default to CloudFlare)
 
-We are using workers NOT pages as pages are deprecated. 
+We are using Workers, NOT Pages.
+
+### Workers vs Pages (as of 2026)
+- Pages is being folded into Workers. New projects should always target Workers.
+- `wrangler deploy` with a `"main"` field in `wrangler.jsonc` deploys as a Worker. Without `"main"`, wrangler may autoconfig as Pages.
+- Use `@sveltejs/adapter-cloudflare` (the `-workers` variant is deprecated).
+- Workers serve static assets natively via the `"assets"` config — no separate Pages project needed.
+- If wrangler autoconfig creates a Pages project by mistake, delete it in the dashboard and redeploy with `"main"` set in `wrangler.jsonc`.
 - Auto-provision wherever possible
 - Configure via APIs otherwise - for first time setup of tokens, instruct the user on how to do this in the CloudFlare dashboard
 - Provide instructions to configure via CloudFlare dash as a last resort
