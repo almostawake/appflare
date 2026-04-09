@@ -14,7 +14,6 @@
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^7.2.6",
 		"@sveltejs/kit": "^2.50.2",

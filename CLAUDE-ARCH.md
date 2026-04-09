@@ -13,7 +13,7 @@ TypeScript (strict mode)
 ## Infrastructure (cloudflare)
 
 We are NOT using pages, they are deprecated. 
-We want auto-provision wherever posisble
+We want auto-provision wherever possible.
 Worker name is "appflare". All resources use the naming convention appflare-{type} (e.g. appflare-db, appflare-kv, appflare-r2) unless otherwise specified.
 
 - D1 via Drizzle ORM (add drizzle-orm, drizzle-kit, drizzle.config.ts, and db:* scripts when needed)
@@ -22,17 +22,15 @@ Worker name is "appflare". All resources use the naming convention appflare-{typ
 - Zod 
 - REST API conventions
 
-## Functional 
+## Auth
 
-- Auth: Firebase Auth using firebase-auth-cloudflare-workers
-  - When adding auth: install firebase (dep), firebase-auth-cloudflare-workers (dep), firebase-tools (dev dep)
-  - Add firebase.json with auth emulator (port 9099) and emulator UI (port 4000)
-  - Add start:emulators script: "firebase emulators:start --only auth"
-  - use redirect-based auth (signInWithRedirect) for LLM and test friendliness
-  - Firebase project config (apiKey, projectId, authDomain) via environment variables
-  - Google sign-in provider must be enabled in Firebase console
-  - Proxy Firebase /__/auth/* routes through a SvelteKit catch-all server route
-- Sockets/realtime: Party Kit
+Cloudflare Access (Zero Trust) with One-time PIN (email OTP). Configured via dashboard, not in code. On first deployment, ask the user which email addresses should have access.
+
+Do NOT implement custom password auth, token auth, Firebase Auth, or roll-your-own login flows.
+
+## Sockets/realtime
+
+Party Kit
 
 ## Tooling
 
