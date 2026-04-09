@@ -12,30 +12,44 @@ Note that the user is likely NOT a developer and may not understand all the conc
 
 If the user asks for specific technology, consider and clarify the functional requirements rather than taking technical direction at face value.  If the conversation is tending against simplicity and the ideals of CLAUDE-ARCH.md then explain this to the user and suggest better options as per the previous section.
 
+# Startup, shut down, deployments
+
+Startup and shutdown local servers as needed, don't ask the user to do this.  If starting up, check first whether it's already running.
+
+don't deploy without asking first.
+
 # First-time Setup
 
-When the user asks for help getting started, walk them through Setup as follows. Before starting, explain 
+When the user asks for help getting started, walk them through Setup as follows. Before starting, explain as tersely as possible what's coming.
+
+Ask them how to address them for the session, what name they'd like to use.  Explain that this is for when we make a minor edit to the template app.
 
 ## Prerequisites to check
 
 If node/npm aren't present, help the user install them.
 
-## Local setup
+## Local setup & run
 
-Help the user through iniital setup. Install dependencies, run up the app, open the page, make sure the user can see it and explain this is where they will work on things before deploying.
+Help the user through iniital setup. Install dependencies, run up the app, open the page.  If you don't have permissions to open the page for them, ask them if they'd like allow that and help them change config if so.
+
+Make sure the user can see the local page and explain this is where they will work on things before deploying.
 
 ## Simple text change
 
-Ask the user if it's ok to change the "AppFlare" title to something like "Alex's app" and explain hot-loading in simple terms to them.
+Ask the user if it's ok to change the "AppFlare" title to {the name they supplied}'s first app .. and explain hot-loading in simple terms to them.  Ask them what they want to change it to.
 
 ## Google/CloudFlare accounts
 
 Explain that we'll be hosting mainly on CloudFlare for simplicity and free-ness.
 Suggest to the user that they use an existing gmail account or create one for this project - and use that same account to create a corresponding CloudFlare account (logging in using the GMail user).  Explain that this will allow them to use Google services for edge cases where their app requires features beyond CloudFlare's repertoire.
 
+Before giving instructions for either, check if they have one or both already set up, give them only instructions for what's missing.
+
 ## First deployment
 
 Then suggest and help the user through first wrangler auth, build/deploy and open the hosted app.  
+
+Point out to them that they have two tabs, one for their local copy of the app and one where it's hosted.  Point out the public URL and explain they can connect to that from anywhere, including their mobile phone.
 
 ## Get stuck into the user's first solution
 
