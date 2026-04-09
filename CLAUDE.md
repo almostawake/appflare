@@ -13,6 +13,8 @@ When the user asks for help getting started, walk them through these steps in or
 
 ## Setup steps
 
+Help the user through these, keeping in mind they're likely not a developer.  Wherever possible do it for them.
+
 1. **Install dependencies** — run `npm install`.
 2. **Create a Cloudflare account** — ask the user if they already have one. If not, direct them to https://dash.cloudflare.com/sign-up — it's free, no credit card required.
 3. **Authenticate wrangler** — run `npx wrangler login`. This will open a browser window. Tell the user to approve the access request. Verify with `npx wrangler whoami`.
