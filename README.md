@@ -18,18 +18,20 @@ Everything you need to go from idea to a working "app":
 
 - **File storage** — a place to keep uploaded files, images, documents, and so on.
 
-- **Scheduled tasks** — set things to happen automatically on a schedule, like checking a website, sending a daily summary or cleaning up old data.
+- **Scheduled tasks** — set things to happen automatically on a schedule, like checking a website for new information.
 
 - **Code quality checks** — built-in tools that catch common mistakes and keep the code tidy, so Claude writes cleaner code from the start.
 
 ## Who is this for?
 
-People who have an idea for a small tool or app but aren't developers. You might be a business analyst, a project manager, a team lead, or just someone who wants to automate a repetitive task. You describe what you need, and this template gives Claude the structure it needs to build it well.
+People who have an idea for a small tool or app but aren't developers. You might be a business analyst, a project manager, a team lead, or just someone who wants to automate a repetitive task. You describe what you need, and this template gives Claude the structure it needs to build it.
 
 ## Getting started
 
-1. Ask Claude Code to help you set up a copy of this project.
-2. Describe what you'd like to build — start simple.
-3. Claude will write the code, and you can see your app running in the cloud within minutes.
+1. Download this repository (green code button -> download zip)
+2. Unzip it into a convenient location
+3. Create a new Claude Code session and open the new folder
+4. Ask Claude's help to get started
 
-That's it. No installs, no configuration decisions, no technology rabbit holes. Just your idea, brought to life.
+
+
