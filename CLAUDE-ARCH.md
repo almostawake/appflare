@@ -20,6 +20,8 @@ We are using Workers, NOT Pages.
 - Use `@sveltejs/adapter-cloudflare` (the `-workers` variant is deprecated).
 - Workers serve static assets natively via the `"assets"` config — no separate Pages project needed.
 - If wrangler autoconfig creates a Pages project by mistake, delete it in the dashboard and redeploy with `"main"` set in `wrangler.jsonc`.
+- Resources (D1, KV, R2) are provisioned via **bindings** in `wrangler.jsonc`, not manually in the dashboard. Define the binding without a resource ID and wrangler auto-creates the resource on deploy. Example: `"d1_databases": [{"binding": "DB", "database_name": "appflare-db"}]` — no `database_id` needed.
+- Access bindings in SvelteKit server code via `platform.env` (e.g. `platform.env.DB`).
 - Auto-provision wherever possible
 - Configure via APIs otherwise - for first time setup of tokens, instruct the user on how to do this in the CloudFlare dashboard
 - Provide instructions to configure via CloudFlare dash as a last resort
