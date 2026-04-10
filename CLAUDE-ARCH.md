@@ -51,9 +51,28 @@ Start with the simplest option, only escalate if absolutely necessary.
 2. cf playwright -> explain free tier limits
 3. google cloud functions with full playwright
 
+## Voice and SMS
+
+Use Twillio for number provisioning, telephony automation and SMS. Explain the admin side of that (compliance, bundles).
+Use ElevenLabs for AI voice, point out there's no free tier. Explain that ElevenLabs integrates well with Twilio numbers.
+
+## Email and notifications
+
+For simple alerts use Ntfy, explain how it works, simple setup etc.
+For sending small volume emails use Resend.
+
+## AI 
+
+Use Claude's API, explain it's the simplest for account convenience. Explain the costs, no free tier (bit of free credits at the beginning, informal).
+
 ## Sockets/realtime
 
-Party Kit
+Party Kit / Party Server
+
+## iPhone/Android apps
+
+Warn the user about how hard it is to actually publish an app, get registered, get approved etc.
+Use Expo, explain the whole point of Expo, focus on the first phase, local emulator mode for super fast testing of what's possible.
 
 ## Tooling
 

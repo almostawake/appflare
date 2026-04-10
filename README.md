@@ -1,16 +1,20 @@
 # AppFlare
 
-A ready-made starting point for building small solutions with the help of Claude and deploying them to run somewhere other than your laptop.
+A ready-made starting point for building small personal apps with the help of Claude Code (which requires a paid plan with Claude, starting).
 
 ## What is this?
 
-AppFlare is a project template with all the technology choices already made for you. You don't need to know which tools to pick, how to wire them together, or what best practices to follow — that's all been done.
+AppFlare is a project template with all the technology choices already made, so you don't get lost. 
 
-Your job is to describe what you want to build. Claude Code can take it from there, using this template as its guide.
+It's also a bunch of guidance to Claude Code to help you through setting up the core hosting services (with a generous free tier thanks to CloudFlare).
+
+Finally, it's still more guidance to Claude Code to help you understand some of the choices you'll need to make for particular services, when you need them e.g. sending yourself emails/notifications, building mobile apps and so on.  
+
+Each type of service has been chosen for simplicity, most have generous free tiers.  There are some exceptions like inbound telephone and AI analysis where no free tiers exist.
 
 ## Who is this for?
 
-People who have an idea for a small tool or app but aren't developers. You might be a business analyst, a project manager, a team lead, or just someone who wants to automate a repetitive task. You describe what you need, and this template gives Claude the structure it needs to build it.
+People who have an idea for a small tool or app but aren't developers. You might be a business analyst, a project manager, a team lead by trade, or just someone who wants to automate a repetitive task. You describe what you need, and this template gives Claude the structure it needs to build it.
 
 ## What's covered?
 

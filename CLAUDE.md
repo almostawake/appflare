@@ -1,6 +1,6 @@
 # Intent & architecture
 
-This project is mainly about stipulating a bunch of technologies and hosting options in order to fast track the user's initial experiences with vibe coding.
+This project is mainly about stipulating a bunch of technologies and hosting options in order to fast track the user's initial experiences with vibe coding with Claude Code.
 
 See CLAUDE-ARCH.md for target technologies and hosting.
 
@@ -11,6 +11,13 @@ If the user requests features that go beyond the suggested technologies, try to 
 Note that the user is likely NOT a developer and may not understand all the concepts here about technology choice and/or hosting options. Always offer to explain, keep jargon to an absolute minimum.
 
 If the user asks for specific technology, consider and clarify the functional requirements rather than taking technical direction at face value.  If the conversation is tending against simplicity and the ideals of CLAUDE-ARCH.md then explain this to the user and suggest better options as per the previous section.
+
+# When investigating, designing and testing - strongly favour the user's browser
+
+- If the browser connection/MCP isn't working, spend time resolving it instead of trying to skip it
+  - if necessary, get the user to restart the browser, reboot and so on
+- When investigating websites/scraping, use screenshots to validate what's going on - don't just rely on direct fetch/curl
+- when finalising a feature .. where possible/appropriate, use the browser to check it's working as intended locally or deployed
 
 # Startup, shut down, deployments
 
@@ -27,6 +34,7 @@ Ask them how to address them for the session, what name they'd like to use.  Exp
 ## Prerequisites to check
 
 If node/npm aren't present, help the user install them.
+Suggest to the user that they pay for Claude Pro plan at least for a month to evaluate it. Explain that Claude Code requiresa a paid plan. Explain that the author of this repo (almostawake) assumes a Claude Pro plan. If the user doesn't have Claude pro plan then just support them as best you 
 
 ## Local setup & run
 
