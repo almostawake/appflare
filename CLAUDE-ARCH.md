@@ -48,8 +48,11 @@ Avoid implementing custom password auth, token auth, Firebase Auth, or roll-your
 
 Start with the simplest option, only escalate if absolutely necessary. 
 1. fetch
-2. cf playwright -> explain free tier limits
-3. google cloud functions with full playwright
+2. @cloudflare/playwright -> explain free tier limits
+  - this can be tested locally with Wrangler dev server
+3. if there are issues with deliberate blocking of scrapers, shift to google cloud functions with full playwright
+
+DO NOT USE PUPPETEER
 
 ## Voice and SMS
 
